@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    
+     <!-- Centered H1 for Medium & Large Devices -->
+     <h1 class="header-title d-none d-md-block">GIFTOS</h1>
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-md navbar-light mb-0 pb-0">
+         <div class="container-fluid">
+             <!-- Small Device: Left Side Brand Name -->
+             <a class="navbar-brand d-md-none" href="#">GIFTOS</a>
+ 
+             <!-- Small Device: Right Side Menu Button -->
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+ 
+             <!-- Navbar Items -->
+             <div class="container collapse navbar-collapse nav-color rounded-top" id="navbarNav">
+                 <ul class="navbar-nav mx-auto">
+                     <li class="nav-item p-2"><a class="nav-link active-a" href="#">HOME</a></li>
+                     <li class="nav-item p-2"><a class="nav-link active-a" href="#">SHOP</a></li>
+                     <li class="nav-item p-2"><a class="nav-link active-a" href="#">WHY US</a></li>
+                     <li class="nav-item p-2"><a class="nav-link active-a" href="#">TESTIMONIAL</a></li>
+                     <li class="nav-item p-2">
+                         <a class="nav-link active-a" href="#">CONTACT US</a>
+                     </li>
+                     <!-- Icons next to "Contact Us" -->
+                     <li class="nav-item fw-bold p-2 d-none d-md-block d-lg-block"><a class="nav-link" href="#"><i class="bi bi-person-fill"></i> Login</a></li>
+                     <li class="nav-item fw-bold p-2 d-none d-md-block d-lg-block"><a class="nav-link" href="#"><i class="bi bi-handbag-fill"></i></a></li>
+                     <li class="nav-item fw-bold p-2 d-none d-md-block d-lg-block"><a class="nav-link" href="#"><i class="bi bi-search fw-bold"></i></a></li>
+                     <li class="nav-item fw-bold d-flex d-md-none d-lg-none justify-content-center">
+                         <a class="nav-link p-2" href="#"><i class="bi bi-person-fill"></i> Login</a>
+                         <a class="nav-link p-2" href="#"><i class="bi bi-handbag-fill"></i></a>
+                         <a class="nav-link p-2" href="#"><i class="bi bi-search fw-bold"></i></a>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+     </nav>
+
+     <div id="giftShopCarousel" class="carousel slide container ps-0 pe-0" data-bs-ride="carousel" data-bs-interval="3000">  <!-- Auto Slide Off -->
+        
+        <!-- Indicators -->
+        <!-- <div class="carousel-indicators">
+            <button type="button" data-bs-target="#giftShopCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#giftShopCarousel" data-bs-slide-to="1"></button>
+        </div> -->
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class=" carousel-content">
+                    <div class="carousel-text">
+                        <h2>Welcome To Our Gift Shop</h2>
+                        <p>Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.</p>
+                        <button class="btn">Contact Us</button>
+                    </div>
+                    <div class="carousel-image">
+                        <img src="img/slider-img.png" alt="Shopping Girl">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class=" carousel-content">
+                    <div class="carousel-text">
+                        <h2>Welcome To Our Gift Shop</h2>
+                        <p>Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.</p>
+                        <button class="btn">Contact Us</button>
+                    </div>
+                    <div class="carousel-image">
+                        <img src="img/slider-img.png" alt="Shopping Girl">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls (Left & Right) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#giftShopCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#giftShopCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center fw-bold">LATEST PRODUCTS</h2>
+        <div class="row mt-4">
+            <!-- Product Card 1 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card">
+                    <span class="badge-new">New</span>
+                    <img src="img/p1.png" alt="Ring">
+                    <div class="product-info">
+                        <span class="product-name">Ring</span>
+                        <span class="product-price">Price <span class="price-value">$200</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card">
+                    <span class="badge-new">New</span>
+                    <img src="img/p2.png" alt="Watch">
+                    <div class="product-info">
+                        <span class="product-name">Watch</span>
+                        <span class="product-price">Price <span class="price-value">$300</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card">
+                    <span class="badge-new">New</span>
+                    <img src="img/p3.png" alt="Teddy Bear">
+                    <div class="product-info">
+                        <span class="product-name">Teddy Bear</span>
+                        <span class="product-price">Price <span class="price-value">$110</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card">
+                    <span class="badge-new">New</span>
+                    <img src="img/p4.png" alt="Flower">
+                    <div class="product-info">
+                        <span class="product-name">Flower Bouquet</span>
+                        <span class="product-price">Price <span class="price-value">$45</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card">
+                    <span class="badge-new">New</span>
+                    <img src="img/p5.png" alt="Flower">
+                    <div class="product-info">
+                        <span class="product-name">Teddy Bear</span>
+                        <span class="product-price">Price <span class="price-value">$95</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card">
+                    <span class="badge-new">New</span>
+                    <img src="img/p6.png" alt="Flower">
+                    <div class="product-info">
+                        <span class="product-name">Flower Bouquet</span>
+                        <span class="product-price">Price <span class="price-value">$45</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 7 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card">
+                    <span class="badge-new">New</span>
+                    <img src="img/p7.png" alt="Flower">
+                    <div class="product-info">
+                        <span class="product-name">Watch</span>
+                        <span class="product-price">Price <span class="price-value">$400</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 8 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card">
+                    <span class="badge-new">New</span>
+                    <img src="img/p8.png" alt="Flower">
+                    <div class="product-info">
+                        <span class="product-name">Ring</span>
+                        <span class="product-price">Price <span class="price-value">$450</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- View All Products Button -->
+        <div class="text-center mt-4">
+            <button class="btn btn-danger px-4 py-2 fw-bold">View All Products</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row promo-section align-items-center">
+            <div class="col-lg-6 text-center">
+                <img src="img/saving-img.png" alt="Shopping Girl" class="img-fluid" width="350">
+            </div>
+            <div class="col-lg-6 container p-0 p-md-5 text-center text-lg-start promo-text">
+                <h2>BEST SAVINGS ON NEW ARRIVALS</h2>
+                <p>
+                    Qui ex dolore at repellat, quia neque doloribus omnis adipisci, ipsum eos odio fugit ut
+                    eveniet blanditiis praesentium totam non nostrum dignissimos nihil eius facere et eaque.
+                </p>
+                <div>
+                    <button class="btn-buy px-4 py-2 me-2">Buy Now</button>
+                    <button class="btn-see px-4 py-2">See More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container why-shop-section">
+        <h2 class="fw-bold p-5">WHY SHOP WITH US</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="why-shop-box">
+                    <img src="img/truck.svg" alt="Fast Delivery" class="why-shop-img">
+                    <h4 class="why-shop-title-text">Fast Delivery</h4>
+                    <p>variations of passages of Lorem Ipsum available</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="why-shop-box">
+                    <img src="img/free.svg" alt="Free Shipping" class="why-shop-img">
+                    <h4 class="why-shop-title-text">Free Shipping</h4>
+                    <p>variations of passages of Lorem Ipsum available</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="why-shop-box">
+                    <img src="img/high-quality.svg" alt="Best Quality" class="why-shop-img">
+                    <h4 class="why-shop-title-text">Best Quality</h4>
+                    <p>variations of passages of Lorem Ipsum available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row gift-section">
+            <div class="col-lg-6 gift-img text-center">
+                <img src="img/gifts.png" alt="Gifts">
+            </div>
+            <div class="col-lg-6 gift-content text-center text-lg-start">
+                <h2 class="gift-title">GIFTS FOR YOUR LOVED ONES</h2>
+                <p>
+                    Omnis ex nam laudantium odit illum harum, excepturi accusamus at corrupti, velit blanditiis unde perspiciatis, vitae minus culpa? Beatae at aut consequuntur porro adipisci aliquam eaque iste ducimus expedita accusantium?
+                </p>
+                <div class="gift-btn">
+                    <button class="btn1 btn-primary1">Buy Now</button>
+                    <button class="btn1 btn-secondary1">See More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container contact-section">
+        <h2 class="fw-bold text-uppercase">Contact Us</h2>
+        <div class="row mt-4 container">
+            <!-- Left Side - Google Map -->
+            <div class="col-lg-6 map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5249.98325970342!2d2.294481!3d48.85837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1742045817064!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <!-- Right Side - Contact Form -->
+            <div class="col-lg-6">
+                <div class="contact-box">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Phone" required>
+                        <textarea placeholder="Message" required></textarea>
+                        <button type="submit" class="send-btn">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial-container">
+        <h2 class="title">TESTIMONIAL</h2>
+    
+        <div class="testimonial-slider">
+            <div class="testimonial-box active">
+                <span class="quote-icon">“</span>
+                <h4 class="testimonial-name">Brad Johns</h4>
+                <h6 class="testimonial-role">Default model text</h6>
+                <p class="testimonial-text">editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various</p>
+            </div>
+    
+            <div class="testimonial-box">
+                <span class="quote-icon">“</span>
+                <h4 class="testimonial-name">Morijorch</h4>
+                <h6 class="testimonial-role">Default model text</h6>
+                <p class="testimonial-text">editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various</p>
+            </div>
+    
+            <div class="testimonial-box">
+                <span class="quote-icon">“</span>
+                <h4 class="testimonial-name">Rochak</h4>
+                <h6 class="testimonial-role">Default model text</h6>
+                <p class="testimonial-text">Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+            </div>
+        </div>
+    
+        <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+        <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+
+        <div class="row">
+            <!-- About Us -->
+            <div class="col-lg-3 col-md-6 mb-2">
+                <h5 class="footer-title">ABOUT US</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,</p>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="col-lg-3 col-md-6 mb-2">
+                <h5 class="footer-title">Newsletter</h5>
+                <div class="newsletter-box">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <button class="btn">SUBSCRIBE</button>
+                </div>
+            </div>
+
+            <!-- Need Help -->
+            <div class="col-lg-3 col-md-6 mb-2">
+                <h5 class="footer-title">NEED HELP</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,</p>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="col-lg-3 col-md-6 mb-2">
+                <h5 class="footer-title">CONTACT US</h5>
+                <ul class="list-unstyled contact-info">
+                    <li><i class="bi bi-geo-alt"></i> Gb road 123, London, UK</li>
+                    <li><i class="bi bi-telephone"></i> +01 12345678901</li>
+                    <li><i class="bi bi-envelope"></i> demo@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- HR Line -->
+        <hr>
+
+        <!-- Copyright -->
+        <div class="footer-bottom mt-auto mb-auto">
+            <p>© 2025 All Rights Reserved By Free Html Templates</p>
+        </div>
+
+    </div>
+</footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
